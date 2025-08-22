@@ -86,7 +86,7 @@ public class StringTemplateTests
         new Action(() => sut.ToString(data).Should().Be("v1/test/24690"))
             .Should()
             .ThrowExactly<FormatException>();
-    }    
+    }
 
     [Test]
     public void ToString_WithNoParameters_ShouldProduceTheExpectedResult()
