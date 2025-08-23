@@ -8,3 +8,23 @@ This library provides a `StringTemplate` class that encapsulates templating of a
 
 A `System.Text.Json` converter is also provided to serialise and deserialise instances of `StringTemplate`. This is the `StringTemplateJsonConverter` class.
 
+# StringTemplate
+
+The following code shows a very basic usage of `StringTemplate` to replace an id in a URL fragment string:
+
+```csharp
+var data = JsonNode.Parse(
+    """
+    {
+        "id": 12345
+    }
+    """
+);
+
+var sut = new StringTemplate("\"v1/test/${id}\"");
+var result = sut.ToString(data);
+
+// result will be "v1/test/12345"
+```
+
+
