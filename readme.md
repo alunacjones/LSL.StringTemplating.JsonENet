@@ -4,7 +4,9 @@
 
 # LSL.StringTemplating.JsonENet
 
-Provide package documentation here.
+This library provides a `StringTemplate` class that encapsulates templating of a string using [JsonE.Net](https://www.nuget.org/packages/JsonE.Net)
+
+A `System.Text.Json` converter is also provided to serialise and deserialise instances of `StringTemplate`
 
 <!-- HIDE -->
 ## Further Documentation
